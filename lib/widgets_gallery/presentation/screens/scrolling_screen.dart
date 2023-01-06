@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-
 import '../../data/repository/teams_repository.dart';
 
-class ScrollingWidgets extends StatefulWidget {
-  const ScrollingWidgets({super.key});
+class ScrollingScreen extends StatefulWidget {
+  const ScrollingScreen({super.key});
 
   @override
-  State<ScrollingWidgets> createState() => _ScrollingWidgetsState();
+  State<ScrollingScreen> createState() => _ScrollingScreenState();
 }
 
-class _ScrollingWidgetsState extends State<ScrollingWidgets> {
+class _ScrollingScreenState extends State<ScrollingScreen> {
   final teams = TeamsRepository.teamsIdentification;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('veja'),
+        title: const Text('Times'),
         centerTitle: true,
       ),
       body: ListView.builder(
@@ -27,14 +26,17 @@ class _ScrollingWidgetsState extends State<ScrollingWidgets> {
           return Stack(
             fit: StackFit.expand,
             children: <Widget>[
-              Image.asset(teams.imagem),
+              Image.asset(
+                teams.imagem,
+                //fit: BoxFit.cover,
+              ),
               Align(
                 alignment: Alignment.bottomRight,
                 child: Container(
                   margin: const EdgeInsets.all(10),
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                      color: Colors.red,
+                      color: Colors.grey,
                       borderRadius: BorderRadius.circular(20)),
                   child: Text(
                     teams.nome,

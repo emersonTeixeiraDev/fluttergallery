@@ -3,36 +3,36 @@ import 'package:flutter_gallery/widgets_gallery/domain/model.dart';
 class TeamsRepository {
   static List<Teams> teamsIdentification = [
     Teams(
-      'assets/Images/clubs/Corinthians.png',
       'Corinthians',
+      'assets/images/clubs/Corinthians.png',
     ),
     Teams(
-      'assets/Images/clubs/Palmeiras.png',
       'Palmeiras',
+      'assets/images/clubs/Palmeiras.png',
     ),
     Teams(
-      'assets/Images/clubs/AthleticoParanaense.png',
       'Athletico Paranaense ',
+      'assets/images/clubs/AthleticoParanaense.png',
     ),
     Teams(
-      'assets/Images/clubs/Internacional.png',
       'Internacional',
+      'assets/images/clubs/Internacional.png',
     ),
     Teams(
-      'assets/Images/clubs/AtléticoMineiro.png',
       'Atlético Mineiro',
+      'assets/images/clubs/AtléticoMineiro.png',
     ),
     Teams(
-      'assets/Images/clubs/Grêmio.png',
       'Grêmio',
+      'assets/images/clubs/Grêmio.png',
     ),
     Teams(
-      'assets/Images/clubs/Flamengo.png',
       'Flamengo',
+      'assets/images/clubs/Flamengo.png',
     ),
     Teams(
-      'assets/Images/clubs/Botafogo.png',
       'Botafogo',
+      'assets/images/clubs/Botafogo.png',
     ),
   ];
 }
