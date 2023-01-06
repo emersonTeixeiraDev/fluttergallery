@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'components_button.dart';
 
-class AbaLateral extends StatelessWidget {
-  const AbaLateral({super.key});
+class DrawerScreen extends StatelessWidget {
+  const DrawerScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +17,10 @@ class AbaLateral extends StatelessWidget {
             child: const FlutterLogo(),
           ),
           const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Text('Widgets'),
+            padding: EdgeInsets.only(top: 16),
+            child: Text('dw'),
           ),
-          const ComponentsButtons()
+          const ComponentsFlutter()
         ],
       ),
     );

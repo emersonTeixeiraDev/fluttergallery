@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'aba_lateral.dart';
+import '../widgets/drawer_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,7 +12,8 @@ class HomePage extends StatelessWidget {
         backgroundColor: const Color(0xffD6D6D6),
         title: const Text('Menu'),
       ),
-      drawer: const AbaLateral(),
+      drawer: const DrawerScreen(),
+      body: null,
     );
   }
 }
