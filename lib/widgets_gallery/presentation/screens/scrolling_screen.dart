@@ -28,7 +28,6 @@ class _ScrollingScreenState extends State<ScrollingScreen> {
             children: <Widget>[
               Image.asset(
                 teams.imagem,
-                //fit: BoxFit.cover,
               ),
               Align(
                 alignment: Alignment.bottomRight,
