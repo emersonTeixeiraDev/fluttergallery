@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gallery/home/presentation/screens/home_page.dart';
+import 'package:flutter_gallery/home/presentation/screens/home_screen.dart';
 import 'package:flutter_gallery/routes/app_routes.dart';
 import 'package:flutter_gallery/theme/theme.dart';
 

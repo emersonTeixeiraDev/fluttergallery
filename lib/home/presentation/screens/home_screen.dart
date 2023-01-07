@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../widgets/drawer_screen.dart';
+import 'package:flutter_gallery/home/presentation/screens/glossary_index.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,10 +9,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xffD6D6D6),
-        title: const Text('Menu'),
+        title: const Text(
+          'Glossário de widgets',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
-      drawer: const DrawerScreen(),
-      body: null,
+      body: const GlossaryIndex(),
     );
   }
 }
