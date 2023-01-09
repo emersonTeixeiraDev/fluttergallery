@@ -9,8 +9,8 @@ class GlossaryIndex extends StatelessWidget {
     return Column(
       children: const [
         GlossaryItemButtom(
-          title: 'Widgets de Scroll',
-          route: '/scroll-widgets',
+          title: 'Widgets de Scrolling',
+          route: '/scroll-home',
         ),
       ],
     );

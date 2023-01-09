@@ -1,4 +1,4 @@
-import 'package:flutter_gallery/widgets_gallery/domain/model.dart';
+import 'package:flutter_gallery/scrolling_widgets/domain/model.dart';
 
 class TeamsRepository {
   static List<Teams> teamsIdentification = [
