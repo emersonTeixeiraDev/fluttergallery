@@ -15,7 +15,7 @@ class App extends StatelessWidget {
       theme: theme(),
       routes: {
         AppRoutes.home: (ctx) => const HomePage(),
-        AppRoutes.scrollingwidgets: (ctx) => const ListViewBiulderScreen(),
+        AppRoutes.scrollingwidgets: (ctx) => const ListViewBuilderScreen(),
         AppRoutes.scrollinghome: (ctx) => const HomeScrolling(),
       },
       //home: const HomePage(),

@@ -24,7 +24,7 @@ class HomeScrolling extends StatelessWidget {
             onPressed: () =>
                 Navigator.of(context).pushNamed(AppRoutes.scrollingwidgets),
             style: ButtonStyle(
-              fixedSize: MaterialStateProperty.all(Size(200, 50)),
+              fixedSize: MaterialStateProperty.all(const Size(200, 50)),
               shape: MaterialStatePropertyAll(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
@@ -33,22 +33,6 @@ class HomeScrolling extends StatelessWidget {
             ),
             child: const Text('ListView.Biulder'),
           ),
-          // SizedBox(
-          //   height: 10,
-          // ),
-          // ElevatedButton(
-          //   onPressed: () =>
-          //       Navigator.of(context).pushNamed(AppRoutes.scrollingwidgets),
-          //   style: ButtonStyle(
-          //     fixedSize: MaterialStateProperty.all(Size(200, 50)),
-          //     shape: MaterialStatePropertyAll(
-          //       RoundedRectangleBorder(
-          //         borderRadius: BorderRadius.circular(15),
-          //       ),
-          //     ),
-          //   ),
-          //   child: const Text('Draggable Scrollable Sheet'),
-          // )
         ],
       ),
     );
