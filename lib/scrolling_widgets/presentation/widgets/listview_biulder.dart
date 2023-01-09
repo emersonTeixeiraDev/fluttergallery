@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import '../../data/repository/teams_repository.dart';
 
-class ScrollingScreen extends StatefulWidget {
-  const ScrollingScreen({super.key});
+class ListViewBiulderScreen extends StatefulWidget {
+  const ListViewBiulderScreen({super.key});
 
   @override
-  State<ScrollingScreen> createState() => _ScrollingScreenState();
+  State<ListViewBiulderScreen> createState() => _ListViewBiulderScreenState();
 }
 
-class _ScrollingScreenState extends State<ScrollingScreen> {
+class _ListViewBiulderScreenState extends State<ListViewBiulderScreen> {
   final teams = TeamsRepository.teamsIdentification;
 
   @override

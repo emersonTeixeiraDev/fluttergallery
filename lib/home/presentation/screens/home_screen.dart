@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
           'Glossário de widgets',
           style: TextStyle(color: Colors.black),
         ),
+        centerTitle: true,
       ),
       body: const GlossaryIndex(),
     );
