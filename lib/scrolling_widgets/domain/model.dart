@@ -7,3 +7,13 @@ class Teams {
     this.imagem,
   );
 }
+
+class Contacts {
+  String imageUrl;
+  String name;
+
+  Contacts({
+    required this.imageUrl,
+    required this.name,
+  });
+}

@@ -1,5 +1,8 @@
 class AppRoutes {
   static const home = '/';
-  static const scrollingwidgets = '/scroll-widgets';
-  static const scrollinghome = '/scroll-home';
+
+  //Scroll
+  static const scrollingHome = '/scroll-home';
+  static const scrollinListB = '/scroll-listB';
+  static const scrollinDraggable = '/scroll-draggable';
 }

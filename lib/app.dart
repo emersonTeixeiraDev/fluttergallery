@@ -4,6 +4,7 @@ import 'package:flutter_gallery/routes/app_routes.dart';
 import 'package:flutter_gallery/scrolling_widgets/presentation/screens/home_scrolling.dart';
 import 'package:flutter_gallery/theme/theme.dart';
 
+import 'scrolling_widgets/presentation/widgets/draggable_scrollable_sheet.dart';
 import 'scrolling_widgets/presentation/widgets/listview_biulder.dart';
 
 class App extends StatelessWidget {
@@ -15,8 +16,10 @@ class App extends StatelessWidget {
       theme: theme(),
       routes: {
         AppRoutes.home: (ctx) => const HomePage(),
-        AppRoutes.scrollingwidgets: (ctx) => const ListViewBuilderScreen(),
-        AppRoutes.scrollinghome: (ctx) => const HomeScrolling(),
+        AppRoutes.scrollinListB: (ctx) => const ListViewBuilderScreen(),
+        AppRoutes.scrollingHome: (ctx) => const HomeScrolling(),
+        AppRoutes.scrollinDraggable: (ctx) =>
+            const DraggableScrollableSheetScreen(),
       },
       //home: const HomePage(),
     );
