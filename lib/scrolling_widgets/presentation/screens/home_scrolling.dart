@@ -11,7 +11,9 @@ class HomeScrolling extends StatelessWidget {
         backgroundColor: const Color(0xffD6D6D6),
         title: const Text(
           'Widgets de Scrolling',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(
+            color: Colors.black,
+          ),
         ),
         centerTitle: true,
       ),
@@ -34,7 +36,9 @@ class HomeScrolling extends StatelessWidget {
                 backgroundColor: MaterialStateProperty.all(
                   const Color(0xffD6D6D6),
                 ),
-                fixedSize: MaterialStateProperty.all(const Size(200, 50)),
+                fixedSize: MaterialStateProperty.all(
+                  const Size(200, 50),
+                ),
                 shape: MaterialStatePropertyAll(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
@@ -43,7 +47,9 @@ class HomeScrolling extends StatelessWidget {
               ),
               child: const Text(
                 'ListView.Biulder',
-                style: TextStyle(color: Colors.black),
+                style: TextStyle(
+                  color: Colors.black,
+                ),
               ),
             ),
             const SizedBox(
@@ -56,7 +62,9 @@ class HomeScrolling extends StatelessWidget {
                 backgroundColor: MaterialStateProperty.all(
                   const Color(0xffD6D6D6),
                 ),
-                fixedSize: MaterialStateProperty.all(const Size(200, 50)),
+                fixedSize: MaterialStateProperty.all(
+                  const Size(200, 50),
+                ),
                 shape: MaterialStatePropertyAll(
                   RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),

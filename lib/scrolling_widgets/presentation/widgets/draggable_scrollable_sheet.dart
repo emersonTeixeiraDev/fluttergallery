@@ -11,7 +11,6 @@ class DraggableScrollableSheetScreen extends StatefulWidget {
 
 class _DraggableScrollableSheetScreenState
     extends State<DraggableScrollableSheetScreen> {
-  //List<Contacts> contatoSelecionadio = [];
   String nomeSelecionado = '';
   String imageSelecionado = '';
   @override
@@ -30,7 +29,9 @@ class _DraggableScrollableSheetScreenState
         child: Stack(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(top: 20),
+              padding: const EdgeInsets.only(
+                top: 20,
+              ),
               child: Align(
                 alignment: Alignment.topCenter,
                 child: Column(
@@ -42,13 +43,14 @@ class _DraggableScrollableSheetScreenState
                       ),
                     ),
                     Container(
-                        color: Colors.transparent,
-                        width: 200,
-                        height: 200,
-                        child: CircleAvatar(
-                          backgroundColor: const Color(0xffD6D6D6),
-                          backgroundImage: NetworkImage(imageSelecionado),
-                        )),
+                      color: Colors.transparent,
+                      width: 200,
+                      height: 200,
+                      child: CircleAvatar(
+                        backgroundColor: const Color(0xffD6D6D6),
+                        backgroundImage: NetworkImage(imageSelecionado),
+                      ),
+                    ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
@@ -83,17 +85,13 @@ class _DraggableScrollableSheetScreenState
                       final contacts =
                           ContactsRepository.usersContacts.elementAt(index);
                       return ListTile(
-                        //selected: contatoSelecionadio.contains(contacts),
-                        //selectedColor: Colors.red,
                         onTap: () {
-                          setState(() {
-                            nomeSelecionado = contacts.name;
-                            imageSelecionado = contacts.imageUrl;
-                          });
-                          // (contatoSelecionadio.contains(contacts))
-                          //     ? contatoSelecionadio.remove(contacts)
-                          //     : contatoSelecionadio.add(contacts);
-                          // debugPrint(contacts.name);
+                          setState(
+                            () {
+                              nomeSelecionado = contacts.name;
+                              imageSelecionado = contacts.imageUrl;
+                            },
+                          );
                         },
                         leading: CircleAvatar(
                           backgroundColor: const Color(0xffD6D6D6),

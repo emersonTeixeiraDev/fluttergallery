@@ -32,14 +32,24 @@ class _ListViewBuilderScreenState extends State<ListViewBuilderScreen> {
               Align(
                 alignment: Alignment.bottomRight,
                 child: Container(
-                  margin: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(
+                    10,
+                  ),
+                  padding: const EdgeInsets.all(
+                    10,
+                  ),
                   decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(20)),
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(
+                      20,
+                    ),
+                  ),
                   child: Text(
                     teams.nome,
-                    style: const TextStyle(fontSize: 30, color: Colors.white),
+                    style: const TextStyle(
+                      fontSize: 30,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
